@@ -1,0 +1,55 @@
+@import 'nib'
+@import 'normalize.styl'
+
+azul = #a8d9ff
+amarillo = #fff
+
+body
+	font-size 16px
+	margin 0
+	padding 0
+.container
+	position relative
+	max-width 1800px
+	min-height 500px
+	overflow hidden
+#containerFirst
+	background linear-gradient( top, azul,75% , amarillo )
+.imgCloud
+	position absolute
+	top 0px
+.imgMountain
+	position absolute
+	margin-left -100px
+	margin-right -100px
+.imgTree
+	position absolute
+	margin-left -75px
+	top 500px
+ul
+	padding 0
+	margin 0
+
+.floating-right
+	animation-name floating-right
+	animation-duration 10s
+	animation-iteration-count infinite
+.floating-left
+	animation-name floating-left
+	animation-duration 10s
+	animation-iteration-count infinite
+	
+@keyframes floating-right
+	0%
+		transform translate( 0% )
+	50%
+		transform translate( 8% )
+	100%
+		transform translate( 0% )
+@keyframes floating-left
+	0%
+		transform translate( 0% )
+	50%
+		transform translate( -8% )
+	100%
+		transform translate( 0% )
