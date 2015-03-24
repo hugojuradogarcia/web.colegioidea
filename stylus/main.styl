@@ -15,17 +15,29 @@ body
 	overflow hidden
 #containerFirst
 	background linear-gradient( top, azul,75% , amarillo )
-.imgCloud
+.layer img
 	position absolute
+.imgCloud
 	top 0px
 .imgMountain
-	position absolute
 	margin-left -100px
 	margin-right -100px
+.birds
+	top 0px
+	left 0px
 .imgTree
+	left -100px
+	top 300px
+	
+.fallingLeaves
+	background-image url('img/background/hojas.png')
+	background red
+	height 100px
+	width 100px
 	position absolute
-	margin-left -75px
-	top 500px
+#menu
+	top 0px
+	left 0px
 ul
 	padding 0
 	margin 0
@@ -37,8 +49,7 @@ ul
 .floating-left
 	animation-name floating-left
 	animation-duration 10s
-	animation-iteration-count infinite
-	
+	animation-iteration-count infinite	
 @keyframes floating-right
 	0%
 		transform translate( 0% )
@@ -53,3 +64,54 @@ ul
 		transform translate( -8% )
 	100%
 		transform translate( 0% )
+
+.hatch
+	animation-name hatch
+	animation-duration 15s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch
+	0%
+		transform rotate( 0deg )
+	20%
+		transform rotate( -2deg )
+	35%
+		transform rotate( 2deg )
+	50%
+		transform rotate( -2deg )
+	65%
+		transform rotate( 1deg)
+	80%
+		transform rotate( -1deg )
+	100%
+		transform rotate( 0deg )
+
+.slideRight
+	animation-name slideRight
+	animation-duration 20s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	visibility visible
+@keyframes slideRight
+	0%
+		transform translateX( 0% ) scale( .5 )
+		opacity 0
+	100%
+		transform translateX( 100% ) scale( 1 )
+		opacity 1
+		
+.falling
+	animation-name falling
+	animation-duration 8s
+	animation-iteration-count infinite
+	animation-timing-function linear 
+	animation-direction normal	
+@keyframes falling 
+	0%
+		opacity 1
+		transform translateY(-10%)
+	100% 
+		opacity 0.5
+		transform translateY(100%) 
