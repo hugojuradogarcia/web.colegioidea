@@ -26,8 +26,9 @@
 				<img class="imgMountain" src="img/background/pasto2.png" alt="">
 			</li>
 			<li class="layer" data-depth="0.60">
-				<img class="imgTree hatch" src="img/background/arbol.png" alt="" >
-				<img alt="" class="fallingLeaves falling" width="100px">
+				<img class="imgTree hatch" src="img/background/arbol.png" alt="">
+				<div id="fallingLeaves" class="falling">
+				</div>
 			</li>
 			<li class="layer" data-depth="0.60">
 				<img class="imgMountain" src="img/background/pasto1.png" alt="">
@@ -58,15 +59,31 @@
     	$('.imgMountain').css({ 
     		'width': $(window).width() + 200
     	});
-
+    	$('.imgCloud').css({ 
+    		'width': $(window).width() + 200
+    	});
+    	// Posicionar 3 layers Montañas
     	var imgMountain = $('.imgMountain');
 		var imgMountainHeight = imgMountain.height();
-
-		// alert(screenHeight + '+'+ imgMountainHeight);
+		
 		$('.imgMountain').css({
-			'top' : screenHeight - imgMountainHeight +25
+			'top' : screenHeight - imgMountainHeight + 25
 		});
-	});
+		// Posicionar arbol 
+		var tree = $('.imgTree');
+		var treeHeight = tree.height();
+
+		$('.imgTree').css({
+			'top' : screenHeight - treeHeight
+		});
+
+		$('#fallingLeaves').css({
+			'top' : screenHeight - treeHeight + 200,
+			'width' : tree.width(),
+			'height' : tree.height()
+
+		})
+	});debug();
 	</script>
 </body>
 </html>

@@ -27,14 +27,14 @@ body
 	left 0px
 .imgTree
 	left -100px
-	top 300px
+	top 15em
+	width 20em
 	
-.fallingLeaves
-	background-image url('img/background/hojas.png')
-	background red
-	height 100px
-	width 100px
+#fallingLeaves
+	background-image url("../img/background/hojas.png")
+	background-repeat no-repeat
 	position absolute
+	left 0
 #menu
 	top 0px
 	left 0px
@@ -110,8 +110,13 @@ ul
 	animation-direction normal	
 @keyframes falling 
 	0%
+		opacity 0
+		//transform translateY( 0% )
+		background-position -10px -200px
+	50%
 		opacity 1
-		transform translateY(-10%)
+		background-position 10px 0px
 	100% 
-		opacity 0.5
-		transform translateY(100%) 
+		
+		//transform translateY( 100% ) 
+		background-position -10px 200px
