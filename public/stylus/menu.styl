@@ -1,0 +1,38 @@
+azul = #0e458f
+azul2 = #2360b3
+
+.canvas
+	position relative
+.main-menu
+	padding 0
+	width 200px
+	position fixed
+	left -200px !important
+	top 0
+	transition .3s
+	z-index 30
+	background azul
+	height 100%
+	&.is-active
+		left 0 !important
+	&-item
+		padding-left 25px
+		text-align center
+		height 50px
+		line-height 50px
+		transition 2s
+		list-style none
+		&:hover
+			background azul2
+			border-left 10px solid azul2
+	&-link
+		color white
+		text-decoration none
+		text-transform font
+		uppercase-size 14px
+		text-align left
+		display block
+#btn-return
+	cursor pointer
+	
+/* RECURSOS*/

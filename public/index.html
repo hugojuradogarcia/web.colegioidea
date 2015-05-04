@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Colegio con Idea</title>
+
+</head>
+<body class="canvas">
+
+	<img src="img/menu/menu.png" id="showmenu" width="200px">
+
+	<header class="header is-active">
+		<ul class="main-menu" id="menu">
+			<li class="main-menu-item" id="hidemenu">
+				<a id="btn-return" class="main-menu-link">
+					OCULTAR
+				</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="#container1" class="main-menu-link">
+					Bienvenidos
+				</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="#escuela" class="main-menu-link">
+					Escuela
+				</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="#container3" class="main-menu-link">
+					Biblioteca
+				</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="#gimnasio" class="main-menu-link">
+					Gimnasio
+				</a>
+			</li>
+			<li class="main-menu-item">
+				<a href="#contacto" class="main-menu-link">
+					Contacto
+				</a>
+			</li>
+
+		</ul>
+	</header>
+
+	<div class="container" id="container1">
+		<ul class="scene" id="scene">
+
+			<li class="layer" data-depth="0.60">
+				<img class="imgCloud floating-left" src="img/background/nube1.png" alt="">
+			</li>
+			
+			<li class="layer" data-depth="0.80">
+				<img class="imgCloud floating-right" src="img/background/nube2.png" alt="">
+			</li>
+
+			<li class="layer" data-depth="0.50">
+				<img class="birds slideRight" src="img/background/aves.png" alt="">
+			</li>
+
+			<li class="layer" data-depth="0.15">
+				<img class="imgMountain" src="img/background/sol.png" alt="">
+			</li>
+			<li class="layer" data-depth="0.20">
+				<img class="imgMountain" src="img/background/pasto3.png" alt="">
+			</li>	
+			<li class="layer" data-depth="0.40">
+				<img class="imgMountain" src="img/background/pasto2.png" alt="">
+			</li>
+
+			<li class="layer" data-depth="0.60">
+				<img class="imgTree hatch" src="img/background/arbol.png" alt="">
+				<div id="fallingLeaves" class="falling">
+				</div>
+			</li>
+
+			<li class="layer" data-depth="0.60">
+				<img class="imgMountain" src="img/background/pasto1.png" alt="">
+			</li>
+			
+			<img class="md-trigger modal-bienvenido" data-modal="modal-10" data-depth="0.0" src="img/menu/titulo.png" width="450px">
+		</ul>
+	</div>
+
+	<div class="container" id="container2">
+		
+		<section class="section sectionLeft">
+			<img src="img/background/arboles1.png" width="170px" class="hatch sectionElements" id="arbol1" alt="">
+
+			<img src="img/background/arboles3.png" width="200px" class="hatch2 sectionElements" id="arbol2" alt="">
+
+			<img src="img/background/ardilla.png" width="120px" class="floating sectionElements" id="ardilla" alt="">
+			
+			<img src="img/background/juego.png" width="200px" class="hatch4 sectionElements" id="juego" alt="">
+
+			<img src="img/background/juegos.png" width="400px" class="sectionElements" id="juegos" alt="">
+
+			<img src="img/background/arbol_pajaro.png" width="200px" class="hatch3 sectionElements" id="arbol5" alt="">
+
+			<img src="img/background/arboles2.png" width="180px" class="hatch2 sectionElements" id="arbol4" alt="">
+
+			<img src="img/background/bancasIzq.png" width="180px" class="sectionElements" id="banca" alt="">
+
+			<img src="img/menu/escuela.png" width="550px" class="sectionElements" id="escuela" alt="">
+
+		</section>
+
+		<section class="section sectionMiddle">
+			<div class="middle">
+				<div data-sr="over 15s, enter top,opacity 1, move 700px" class="walker"></div>
+				<!--<div class="walker hidden"></div>-->
+			</div>
+		</section>
+
+		<section class="section sectionRight">
+			<img src="img/background/arbolesDer1.png" width="450px" class="sectionElements" id="arbolDer" alt="">
+
+			<img src="img/background/arbolesDer2.png" width="300px" class="hatch3 sectionElements" id="arbolDer2" alt="">
+
+			<img src="img/background/bancaDer.png" width="100px" class="hatch3 sectionElements" id="bancaDer" alt="">
+
+			<img src="img/background/arbolesDer3.png" width="150px" class="hatch2 sectionElements" id="arbolDer3" alt="">
+
+			<img src="img/background/lago.png" width="350px" class=" sectionElements" id="lago" alt="">
+
+			<img src="img/background/pajaro.png" width="65px" class="hatch5 sectionElements" id="pajaro" alt="">
+
+			<img src="img/background/animalesDer.png" width="400px" class="sectionElements" id="animalesDer" alt="">
+		</section>
+
+	</div>
+	
+
+	<div class="container" id="container3">
+		<section class="sectionComplete">
+			<div class="middleVertical">
+				<img src="img/camino/camion.png" width="250px" class="sectionElements slideLeft" id="camion" alt="">
+			</div>
+		</section>
+
+
+		<section class="section sectionLeft">
+			
+			<img src="img/container3/arbolesAIzq.png" width="400px" class="sectionElements" id="arbolesAIzq" alt="">
+
+			<img src="img/container3/arbolesBIzq.png" width="300px" class="sectionElements" id="arbolesBIzq" alt="">
+
+			<img src="img/container3/arbolesCIzq.png" width="450px" class="sectionElements" id="arbolesCIzq" alt="">
+
+			<img src="img/container3/arbolesDIzq.png" width="800px" class="sectionElements" id="arbolesDIzq" alt="">
+
+			<img src="img/menu/gimnasio.png" width="400px" class="sectionElements" id="gimnasio" alt="">
+
+		</section>
+
+		<section class="section sectionMiddle">
+			<div class="middle">
+				<!--<div class="walker"></div>-->
+			</div>
+		</section>
+
+		<section class="section sectionRight">
+			
+			<img src="img/container3/arbolesADer.png" width="180px" class="sectionElements" id="arbolesADer" alt="">
+
+			<img src="img/container3/arbolesBDer.png" width="200px" class="sectionElements" id="arbolesBDer" alt="">
+
+			<img src="img/menu/biblioteca.png" width="450px" class="sectionElements" id="biblioteca" alt="">
+
+			<img src="img/menu/biblioteca.png" width="450px" class="sectionElements" id="biblioteca" alt="">
+
+			<img src="img/camino/pajaros.png" width="350px" class=" sectionElements floatingBirds" id="pajaros" alt="">
+			
+			<img src="img/container3/arbolesCDer.png" width="150px" class="sectionElements" id="arbolesCDer" alt="">
+
+			<img src="img/container3/arbolesCCDer.png" width="150px" class="sectionElements" id="arbolesCCDer" alt="">
+
+			<img src="img/camino/avion.png" width="600px" class="flyRight sectionElements" id="avion" alt="">
+			
+			<img src="img/menu/contacto.png" width="200px" class="sectionElements" id="contacto" alt="">
+
+		</section>
+
+	</div>
+
+
+
+	<!-- MODAL -->
+	<div class="md-modal md-effect-10" id="modal-10">
+		<div class="md-content">
+			<h3>Colegio con Idea</h3>
+			<div>
+				<p><strong>Introducción:</strong> Colegio con IDEA es una solución integral desarrollada especialmente para la educación de nivel preescolar y primaria</p>
+				<button class="md-close">Cerrar</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/scrollReveal.min.js"></script>
+	<script src="js/hammer.min.js"></script>	
+	<script src="js/menu.js"></script>
+    <script>
+        window.sr = new scrollReveal();
+    </script>
+
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax( scene );
+	</script>
+
+	<script>
+	$(document).ready(function() {
+
+		var screenHeight = $(window).height();
+
+    	$('#container1').css({ 
+    		'height': screenHeight
+    	});
+    	$('.imgMountain').css({ 
+    		'width': $(window).width() + 200
+    	});
+    	$('.imgCloud').css({ 
+    		'width': $(window).width() + 200
+    	});
+    	// Posicionar 3 layers Montañas
+    	var imgMountain = $('.imgMountain');
+		var imgMountainHeight = imgMountain.height();
+		
+		$('.imgMountain').css({
+			'top' : screenHeight - imgMountainHeight + 25
+		});
+		// Posicionar arbol 
+		var tree = $('.imgTree');
+		var treeHeight = tree.height();
+
+		$('.imgTree').css({
+			'top' : screenHeight - treeHeight
+		});
+
+		$('#fallingLeaves').css({
+			'top' : screenHeight - treeHeight + 200,
+			'width' : tree.width(),
+			'height' : tree.height()
+
+		})
+	});
+	</script>
+
+	<script>
+		/*$(function(){
+			var walkerWoman = $('.walker')
+
+			documentEl = $(document);
+			documentEl.on('scroll', function(){
+				if ( documentEl.scrollTop() > 900 && walkerWoman.hasClass('hidden')) {
+					walkerWoman.removeClass('hidden') ;
+					walkerWoman.addClass('slideDown');
+				}
+				else
+				{
+					walkerWoman.addClass('hidden') ;
+					walkerWoman.removeClass('slideDown');
+				}
+			});
+		});*/
+	</script>
+</body>
+</html>

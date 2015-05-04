@@ -1,0 +1,258 @@
+.floating-right
+	animation-name floating-right
+	animation-duration 10s
+	animation-iteration-count infinite
+@keyframes floating-right
+	0%
+		transform translate( 0% )
+	50%
+		transform translate( 8% )
+	100%
+		transform translate( 0% )
+		
+.floating-left
+	animation-name floating-left
+	animation-duration 10s
+	animation-iteration-count infinite	
+@keyframes floating-left
+	0%
+		transform translate( 0% )
+	50%
+		transform translate( -8% )
+	100%
+		transform translate( 0% )
+
+.hatch
+	animation-name hatch
+	animation-duration 15s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch
+	0%
+		transform rotate( 0deg )
+	20%
+		transform rotate( -2deg )
+	35%
+		transform rotate( 2deg )
+	50%
+		transform rotate( -2deg )
+	65%
+		transform rotate( 1deg)
+	80%
+		transform rotate( -1deg )
+	100%
+		transform rotate( 0deg )
+		
+.hatch2
+	animation-name hatch2
+	animation-duration 15s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch2
+	0%
+		transform rotate( 0deg )
+	20%
+		transform rotate( 2deg )
+	35%
+		transform rotate( -4deg )
+	65%
+		transform rotate( -3deg)
+	80%
+		transform rotate( 4deg )
+	100%
+		transform rotate( 0deg )
+		
+.hatch3
+	animation-name hatch3
+	animation-duration 15s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch3
+	0%
+		transform rotate( 0deg )
+	35%
+		transform rotate( -3deg)
+	65%
+		transform rotate( 3deg)
+	100%
+		transform rotate( 0deg )
+		
+.hatch4
+	animation-name hatch4
+	animation-duration 6s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch4
+	0%
+		transform rotate( 0deg )
+	35%
+		transform rotate( -5deg)
+	65%
+		transform rotate( 5deg)
+	100%
+		transform rotate( 0deg )
+		
+.hatch5
+	animation-name hatch5
+	animation-duration 6s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	transform-origin 50% 100%
+	visibility visible
+@keyframes hatch5
+	0%
+		transform rotate( 0deg )
+	15%
+		transform rotate( 50deg)
+	30%
+		transform rotate( 0deg)
+	100%
+		transform rotate( 0deg )
+		
+.slideRight
+	animation-name slideRight
+	animation-duration 20s
+	animation-timing-function ease-in-out
+	animation-iteration-count infinite
+	visibility visible
+@keyframes slideRight
+	0%
+		transform translateX( 0% ) scale( .5 )
+		opacity 0
+	100%
+		transform translateX( 100% ) scale( 1 )
+		opacity 1
+		
+.falling
+	animation-name falling
+	animation-duration 8s
+	animation-iteration-count infinite
+	animation-timing-function linear 
+	animation-direction normal	
+@keyframes falling 
+	0%
+		opacity 0
+		//transform translateY( 0% )
+		background-position -10px -200px
+	50%
+		opacity 1
+		background-position 10px 0px
+	100% 
+		//transform translateY( 100% ) 
+		background-position -10px 200px
+		
+.walker
+	width 100px
+	height 150px
+	float right
+	background url("../img/background/spriteMuñeca.fw.png") 0 0 no-repeat
+	animation walk 1.2s steps(2) 
+	animation-iteration-count 11
+@keyframes walk
+	from 
+		background-position 0 0
+	to
+		background-position 0 -300px
+		
+.floating
+	animation-name floating
+	animation-duration 2s
+	animation-iteration-count infinite
+@keyframes floating
+	0%
+		transform translateY(0%)
+	25%
+		transform translateY(-15%)
+	50%
+		transform translateY(0%)
+	100%
+		transform translateY(0%)
+
+.slideDown
+	animation-name slideDown
+	animation-duration 15s
+	animation-timing-function ease	
+	visibility visible !important				
+@keyframes slideDown 
+	0% 
+		transform translateY( -700px )
+	100%
+		transform translateY( 0px)
+		
+.slideLeft
+	animation-name slideLeft
+	animation-duration 10s
+	animation-timing-function ease-in-out	
+	visibility visible !important	
+	animation-iteration-count infinite	
+@keyframes slideLeft 
+	0% 
+		transform translateX(500%)
+	40%
+		transform translateX(-10%)
+	50%
+		transform translateX(0%)		
+	60%
+		transform translateX(0%)			
+	100% 
+		transform translateX(-500%)
+
+.flyRight
+	animation-name flyRight
+	animation-duration 15s	
+	animation-timing-function ease-in-out	
+	visibility visible !important	
+	animation-iteration-count infinite	
+
+@keyframes flyRight
+	0% 
+		transform translateX(-350%)	
+	100% 
+		transform translateX(150%)
+		
+.floatingBirds
+	animation-name floatingBirds
+	animation-duration 20s
+	animation-timing-function linear	
+	animation-iteration-count infinite
+@keyframes floatingBirds 
+	0% 
+		transform translate( -450% , 15% )	
+	20%
+		transform translate( -300% , -15% )
+	40%
+		transform translate( -150% , 20% )
+	60% 
+		transform translate( 0% , -2% )	
+	80% 
+		transform translate( 150% , 40% )			
+	100% 
+		transform translate( 300% , -10% )
+.slideRight-car
+	animation-name slideRight-car
+	animation-duration 10s
+	animation-timing-function linear
+	animation-iteration-count infinite
+@keyframes slideRight-car
+	0%
+		transform translateX( -200px ) 
+	100%
+		transform translateX( 1800px )
+.slideRight-bus
+	animation-name slideRight-bus
+	animation-duration 20s
+	animation-timing-function linear
+	animation-iteration-count infinite
+@keyframes slideRight-bus
+	0%
+		transform translateX( -300px ) 
+	100%
+		transform translateX( 1800px )

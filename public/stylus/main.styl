@@ -1,0 +1,400 @@
+@import 'nib'
+@import 'normalize.styl'
+@import 'effects.styl'
+@import 'menu.styl'
+
+azul = #a8d9ff
+blanco = #fff
+verde = #46CE56
+cafe = #AC7D4F
+cafe1 = #724E2E
+amarillo = #edef76
+
+azul1 = #86b7e0
+azul2 = #a3cbe4
+azul3 = #009DE0
+
+body
+	font-size 16px
+	margin 0
+	padding 0
+.container
+	position relative
+	max-width 1800px
+	overflow hidden
+#container1
+	background linear-gradient( top, azul 33%, blanco 66%, amarillo 100% )
+#container2
+	height 900px
+#container3
+	height 1200px
+.layer img
+	position absolute
+.imgCloud
+	top 0px
+	position absolute
+.imgMountain
+	margin-left -100px
+	margin-right -100px
+.imgSun
+	margin-left -100px
+	margin-right -100px
+.birds
+	top 0px
+	left 0px
+.imgTree
+	left -100px
+	top 15em
+	width 20em
+#fallingLeaves
+	background-image url("../img/background/hojas.png")
+	background-repeat no-repeat
+	position absolute
+	left 0
+#showmenu
+	top 2em
+	left 2em
+	position fixed
+	z-index 25
+	cursor pointer
+ul
+	padding 0
+	margin 0
+
+.section
+	height 100%
+	float left
+	padding 0 
+	margin 0
+	position relative
+
+.modal-bienvenido
+	position absolute
+	top 50% !important
+	left 35% !important
+	cursor pointer
+	
+.sectionElements
+	position absolute
+.sectionLeft
+	width 40%
+	background verde
+	#arbol1
+		top .6em
+		right 7em	
+		z-index 2
+	#arbol2
+		top 1.5em
+		right 1.5em
+		z-index 1
+	#ardilla
+		top 13em
+		right 13em
+		z-index 3
+	#banca
+		top 15em
+		right 3em
+		z-index 4
+	#juego
+		top 20em
+		right 6em	
+		z-index 2	
+	#arbol5
+		top 10em
+		right 20em	
+		z-index 1
+	#juegos
+		top 22em
+		right 3em	
+		z-index 4		
+	#arbol4
+		top 5em
+		right 18em	
+		z-index 2
+	#escuela
+		bottom .5em
+		right 0em
+		z-index 6
+	#arbolesAIzq
+		top 1em
+		right 1em
+	#arbolesBIzq
+		top 10em
+		right 15em
+	#arbolesCIzq
+		top 15em
+		right 5em
+	#arbolesDIzq
+		bottom 0em
+		right 0
+	#gimnasio
+		top 20em
+		right 5em
+/* ----- */
+#camion
+	left 45%
+		
+.sectionMiddle
+	width 20%
+	background cafe	
+.middle
+	border-left cafe1 15px solid
+	border-right cafe1 15px solid
+	position relative
+	height 100%	
+	z-index 2
+	.walker
+		bottom 2em 
+		position absolute
+		
+	
+.sectionRight 
+	width 40%
+	background verde
+	#arbolDer
+		top .5em
+		left 1em
+		z-index 1
+	#arbolDer2
+		top 7em
+		left 5em
+		z-index 2
+	#bancaDer
+		top 18em
+		left 13em
+		z-index 3
+	#arbolDer3
+		top 10em
+		left 21em
+		z-index 32
+	#lago
+		top 24em
+		left 2em
+		z-index 3
+	#pajaro
+		top 22em
+		left 1.8em
+		z-index 4
+	#animalesDer
+		bottom 3em
+		left 2em
+		z-index 5
+	#arbolesADer
+		top 0
+		left 18em
+		z-index 1
+	#arbolesBDer
+		top 4em
+		left 4em
+		z-index 2
+	#avion
+		z-index 10
+		bottom 10em
+	#pajaros 
+		z-index 5
+		top 10em
+	#arbolesCDer
+		z-index 3
+		top 30em
+	#arbolesCCDer
+		z-index 3
+		top 30em
+		left 25em
+	#biblioteca
+		z-index 4
+		top 10em
+	#contacto
+		z-index 5
+		bottom 15em
+		left 3em
+
+.sectionComplete
+	width 100%
+	background cafe
+	
+	.middleVertical
+		border-top cafe1 15px solid
+		border-bottom cafe1 15px solid
+		height 12em	
+		z-index 0
+
+button 
+	border none
+	padding 0.6em 1.2em
+	background #c0392b
+	color #fff
+	font-family 'Lato', Calibri, Arial, sans-serif
+	font-size 1em
+	letter-spacing 1px
+	text-transform uppercase
+	cursor pointer
+	display inline-block
+	margin 3px 2px
+	border-radius 2px
+button:hover 
+	background #A5281B
+	
+// MODAL
+.md-perspective,
+.md-perspective body
+	height 100%
+.md-perspective
+	body
+		background #222
+		perspective 600px
+.md-modal
+	position fixed
+	top 50%
+	left 50%
+	width 50%
+	max-width 600px
+	min-width 300px
+	height auto
+	z-index 20
+	visibility hidden
+	backface-visibility hidden
+	transform translateX( -50% ) translateY( -50% )
+.md-show
+	visibility visible
+	& ~ .md-overlay
+		opacity 1
+		visibility visible
+.md-overlay
+	position fixed
+	width 100%
+	height 100%
+	visibility hidden
+	top 0
+	left 0
+	z-index 10
+	opacity 0
+	background rgba(143, 27, 15, .8)
+	transition all 0.3s
+.md-content 
+	color #fff
+	background #e74c3c
+	position relative
+	border-radius 3px
+	margin 0 auto 
+	h3 
+		margin 0
+		padding 0.4em
+		text-align center
+		font-size 2.4em
+		font-weight 300
+		opacity .8
+		background rgba(0, 0, 0, .1)
+		border-radius 3px 3px 0px 0px
+	div
+		padding 15px
+		margin 0 
+		font-weight 300
+		font-size 1.15em
+		p
+			margin 0
+			padding 10px
+			text-align justify
+		ul
+			margin 0
+			padding 0px 0px 30px 30px
+			li
+				padding 5px 0
+		button
+			display block
+			margin 0 auto 
+			font-size 1.2em
+.md-show
+	&.md-effect-16
+		& ~ .md-overlay
+			background rgba(180, 46, 32, .5)
+		& ~ .container
+			filter blur(3px)
+		.md-content
+			transform translateY(0)
+			opacity 1
+.md-effect-16
+	.md-content
+		transform translateY(-5%)
+		opacity 1
+.md-show.md-effect-16 ~ .container,
+.md-effect-16 .md-content
+	transition all .3s
+	
+/* Effect 10: 3D sign */
+.md-effect-10
+	&.md-modal 
+		perspective: 1300px
+	
+
+.md-effect-10 
+	.md-content 
+		transform-style preserve-3d
+		transform rotateX(-60deg)
+		transform-origin 50% 0
+		opacity 0
+		transition all 0.3s
+
+
+.md-show.md-effect-10 
+	.md-content 
+		transform rotateX(0deg)
+		opacity 1
+
+/* RECURSOS*/
+#recursos
+	background linear-gradient( top, azul1 33%, azul2 66%) no-repeat
+	max-width 1800px
+	overflow-x hidden
+	min-height 800px
+	position relative
+	.header-recursos
+		height 150px
+		width 100%
+	#section-recursos
+		border-top 10px solid azul3
+		border-bottom 10px solid azul3
+		background white
+		padding 50px
+		text-align justify
+		#titulo-recursos
+			display block
+			line-height 50px
+			padding 2%
+	#footer-recursos
+		height 187px
+		width 100%
+		background url("../img/recursos/edificios.png") bottom no-repeat
+		.component-footer-recursos
+			position absolute
+			overflow hidden
+		#edificios-recursos
+			bottom 0
+		#car-recursos
+			bottom 0
+			z-index 2
+		#bus-recursos
+			bottom 12px
+			z-index 1
+	
+	.img-responsive
+		width 80%
+		display block
+		margin 20px auto
+.col-3
+	width 25%
+	//display inline-block
+	float left
+	vertical-align top
+.col-12
+	width 100%
+	display inline-block		
+@media screen and (max-width: 768px)
+	.col-3
+		width 50%
+		float left
+		vertical-align top
+@media screen and (max-width: 480px)
+	.col-3
+		width 100%
+		float left
+		vertical-align top
