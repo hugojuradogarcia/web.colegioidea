@@ -116,7 +116,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 			<img src="img/recursos/car.png" class="component-footer-recursos slideRight-car" width="150px" id="car-recursos" alt="">
 			<img src="img/recursos/bus.png" class="component-footer-recursos slideRight-bus" width="300px" id="bus-recursos" alt="">
 		</footer>
-	
+		<div  id="data-article"></div>
 	<!-- MODAL -->
 	<!--<div class="md-modal md-effect-10" id="modal-10">
 		<div class="md-content">
@@ -131,15 +131,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="js/modal.js"></script>
-
-	<script>
-	$(document).ready(function(){
-		$("a[href^='#'].recursos").click(function(event){
-			var id =  $(this).attr("href");
-			alert(id);
-		});
-	})
-	</script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
