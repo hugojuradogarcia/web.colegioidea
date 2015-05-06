@@ -13,8 +13,7 @@ $recursos = new Recursos();
 <body id="recursos">
 		<header class="header-recursos">
 			<img class="imgCloud floating-left" src="img/recursos/nubesIzq.png" alt="">
-			<img
-class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
+			<img class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 		</header>
 
 		<section id="section-recursos">
@@ -26,7 +25,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(19);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -35,7 +34,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(31);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -43,7 +42,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(16);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -51,7 +50,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(12);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -60,7 +59,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(25);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -68,7 +67,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(29);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -76,7 +75,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(43);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -84,7 +83,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(34);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -93,7 +92,7 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(35);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
@@ -101,12 +100,12 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 					<?php 
 					$recursos->get(37);
 					?>
-					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos">
+					<a href="#<?php echo $recursos->rows_recursos[ 0 ]["id_recursos"];?>" class="recursos md-trigger" data-modal="modal-16" data-depth="0.0">
 						<img src="<?php echo "../../admin.recursos/".$recursos->rows_recursos[ 0 ]["logo"];?>" class="img-responsive" alt="">
 					</a>
 				</div>
 
-
+				
 			</div>
 
 		</section>
@@ -116,7 +115,17 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 			<img src="img/recursos/car.png" class="component-footer-recursos slideRight-car" width="150px" id="car-recursos" alt="">
 			<img src="img/recursos/bus.png" class="component-footer-recursos slideRight-bus" width="300px" id="bus-recursos" alt="">
 		</footer>
-		<div  id="data-article"></div>
+	
+		<!-- MODAL -->
+		<div class="md-modal md-effect-16" id="modal-16">
+			<div class="md-content">
+				<h3 id="md-modal-title"></h3>
+				<div>
+					<p id="md-modal-text"></p>
+					<button class="md-close">Cerrar</button>
+				</div>
+			</div>
+		</div>
 	<!-- MODAL -->
 	<!--<div class="md-modal md-effect-10" id="modal-10">
 		<div class="md-content">
@@ -129,7 +138,8 @@ class="imgCloud floating-right" src="img/recursos/nubesDer.png" alt="">
 	</div>-->
 
 
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/classie.js"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/main.js"></script>
 

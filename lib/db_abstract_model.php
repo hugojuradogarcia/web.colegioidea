@@ -26,6 +26,7 @@ abstract class DBAbstractModel
 	{	
 		$this->conn = new mysqli( self::$db_host, self::$db_user,
 								  self::$db_pass, $this->db_name );
+		mysqli_set_charset($this->conn, "utf8");
 	}
 
 	# Desconectar base de datos

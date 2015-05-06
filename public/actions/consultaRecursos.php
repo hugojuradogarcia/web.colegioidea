@@ -10,9 +10,10 @@ if ( !empty( $_POST['id_recursos'] ) ) {
 	$recursos_array = array(
  		'editor' => $recursos->rows_recursos[0]["editor"],
  		'ficha_a' => $recursos->rows_recursos[0]["ficha_a"],
- 		'video' => $recursos->rows_recursos[0]["video"],
- 		'descriptivo' => $recursos->rows_recursos[0]["descriptivo"]
+ 		'descriptivo' => $recursos->rows_recursos[0]["descriptivo"],
+ 		'video' => $recursos->rows_recursos[0]["video"]
  	);
 
  	echo json_encode( $recursos_array );
+ 	exit();
  } ?>

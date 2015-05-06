@@ -11,11 +11,13 @@ $(document).ready(function(){
 			data	: "id_recursos=" + id_recursos,
 			datatype: "json",
 			success : function ( data ){
-				var recursos = data;
-				alert(data.editor);
+				//alert(data);
+				var recursos = jQuery.parseJSON(data);
+				//alert(data);
 				//console.log(data[2])
-				//$('#data-article').html( data['editor'] );
-
+				$('#md-modal-title').html( recursos.editor );
+				$('#md-modal-text').html( recursos.descriptivo );
+				$('.md-modal').css("max-width","900px");
 				//document.getElementById("data-article").innerHTML = data;
 			}
 		});
